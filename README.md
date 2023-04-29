@@ -16,7 +16,7 @@
 * Índice de perda de produtos
 
 ### Funcionalidades para Cálculo dos Indicadores de Desempenho
-* Cálculo de tempo de entrega: diferença entre a data de entrega e a data de saída do produto do almoxarifado
+* Cálculo de tempo de entrega: diferença entre a data de entrega e a data de saída do produto do almoxarifado, em minutos ou horas.
 * Cálculo do número de produtos em estoque: soma dos produtos disponíveis no almoxarifado
 * Cálculo da taxa de ocupação do espaço físico: porcentagem do espaço físico utilizado pelo estoque em relação ao espaço total disponível
 * Cálculo do índice de perda de produtos: porcentagem de produtos que são perdidos em relação ao total de produtos manuseados
@@ -93,7 +93,7 @@
     allowNull: false
   },
   data_entrega: {
-    type: DataTypes.DATE,
+    type: DataTypes.FLOAT, // em minutos ou horas
     allowNull: false
   }
 });
