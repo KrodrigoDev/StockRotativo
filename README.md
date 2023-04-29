@@ -1,6 +1,6 @@
 <h1>AgroStock</h1>
 
-> Status: Desenvolvendo a ideia ⚠️
+> Status: Ideia em desenvolvimento ⚠️
 
 ## Objetivo
 * Criar um sistema de monitoramento de indicadores de desempenho para o almoxarifado agrícola AgroStock.
