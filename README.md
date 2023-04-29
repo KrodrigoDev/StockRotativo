@@ -2,7 +2,7 @@
 
 > Status: Ideia em desenvolvimento ⚠️
 
-## Objetivo
+### Objetivo
 * Criar um sistema de monitoramento de indicadores de desempenho para o almoxarifado agrícola.
 
 ### Funcionalidades
