@@ -3,7 +3,7 @@
 > Status: Ideia em desenvolvimento ⚠️
 
 ## Objetivo
-* Criar um sistema de monitoramento de indicadores de desempenho para o almoxarifado agrícola AgroStock.
+* Criar um sistema de monitoramento de indicadores de desempenho para o almoxarifado agrícola.
 
 ### Funcionalidades
 * Monitorar indicadores de desempenho, como tempo de entrega, número de produtos em estoque, taxa de ocupação do espaço físico e índice de perda de produtos.
