@@ -1,4 +1,4 @@
-<h1>AgroStock</h1>
+<h1>StockRotativo</h1>
 
 > Status: Ideia em desenvolvimento ⚠️
 
