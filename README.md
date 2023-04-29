@@ -27,7 +27,7 @@
 * Gráfico de pizza para taxa de ocupação do espaço físico
 * Gráfico de linha para índice de perda de produtos
 
-### Tecnologias que serão utilizadas
+### Tecnologias Utilizadas
 <table> 
   
 <tr>
@@ -46,7 +46,7 @@
   
 </table>
 
-### Módulos que serão utilizados no node.js
+### Módulos Utilizados no node.js
 <table> 
   
 <tr>
@@ -74,5 +74,100 @@
 </table>
 
 
+### Estrutura de Dados
 
+ * Tempo de Entrega
+ ~~~~Mysql
+ const TempoEntrega = sequelize.define('TempoEntrega', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  produto: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  data_saida: {
+    type: DataTypes.DATE,
+    allowNull: false
+  },
+  data_entrega: {
+    type: DataTypes.DATE,
+    allowNull: false
+  }
+});
+~~~~
 
+* Número de Produtos em Estoque
+~~~~Mysql
+const Estoque = sequelize.define('Estoque', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  produto: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  quantidade: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  data_atualizacao: {
+    type: DataTypes.DATE,
+    allowNull: false
+  }
+});
+~~~~
+
+* Taxa de Ocupação do Espaço Físico
+~~~~Mysql
+const Ocupacao = sequelize.define('Ocupacao', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  espaco_total: {
+    type: DataTypes.FLOAT,
+    allowNull: false
+  },
+  espaco_utilizado: {
+    type: DataTypes.FLOAT,
+    allowNull: false
+  },
+  data_atualizacao: {
+    type: DataTypes.DATE,
+    allowNull: false
+  }
+});
+~~~~
+
+* Índice de Perda de Produtos
+~~~~Mysql
+const Perda = sequelize.define('Perda', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  produto: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  quantidade_total: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  quantidade_perdida: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  data_atualizacao: {
+    type: DataTypes.DATE,
+    allowNull: false
+  }
+});
+~~~~
