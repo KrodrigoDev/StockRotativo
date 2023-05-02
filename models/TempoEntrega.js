@@ -17,13 +17,7 @@ const TempoEntrega = MySql.sequelize.define('TempoEntrega', {
   data_entrega: {
     type: MySql.Sequelize.DATE, // em minutos ou horas
     allowNull: false,
-    get() {
-      // calcula a diferença entre as datas em minutos
-      const diffMinutes = moment(this.getDataValue('data_entrega')).diff(this.getDataValue('data_saida'), 'minutes');
-      // se quiser em horas, é só dividir por 60
-      const diffHours = diffMinutes / 60;
-      return diffHours;
-    }
+   
   }
 }, { freezeTableName: true });
 
